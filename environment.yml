@@ -2,14 +2,19 @@ name: BLPhantom_ImageAnalysis
 channels:
   - defaults
 dependencies:
-  - python=3.9  # specify your python version
+  - python=3.11.5  # specify your python version
   - numpy
+  - tifffile
   - opencv
+  - scikit-learn
+  - cv2
   - scikit-image
   - matplotlib
   - seaborn
   - pandas
   - scipy
+  - jupyter
+  - tkinter
   - notebook
   - pillow
   - pip
