@@ -26,7 +26,7 @@ class ImageAnalysis:
         return all_files
     
     
-    def generate_dark_image(self, tiff_path, num_frames=200):
+    def generate_dark_image(self, tiff_path, num_frames=100):
         """
         Generates a median 'dark' image from the first specified number of frames in a multi-frame TIFF file.
 
