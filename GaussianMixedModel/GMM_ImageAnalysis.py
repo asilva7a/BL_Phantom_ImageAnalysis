@@ -2,9 +2,8 @@ import os
 import numpy as np
 import tifffile
 from sklearn.mixture import GaussianMixture
+import opencv
 import cv2
-import tkinter as tk
-from tkinter import filedialog
 
 def select_file(title="Select file"):
     root = tk.Tk()
@@ -86,4 +85,3 @@ for frame in processed_stack:
     pixel_values_over_time.append(np.sum(roi_frame))
 
 # [Continue with processing the pixel values, e.g., plotting, analysis, etc.]
-    

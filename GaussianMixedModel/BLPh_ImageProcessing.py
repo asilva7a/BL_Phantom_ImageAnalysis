@@ -3,8 +3,6 @@ import numpy as np
 import tifffile
 from sklearn.mixture import GaussianMixture
 import cv2
-import tkinter as tk
-from tkinter import filedialog
 
 
 class directory_manager:
