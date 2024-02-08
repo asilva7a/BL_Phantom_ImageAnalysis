@@ -6,9 +6,7 @@ dependencies:
   - numpy
   - tifffile
   - opencv
-  - cv2
   - imageio
-  - tkinter
   - scikit-learn
   - scikit-image
   - matplotlib
