@@ -1,8 +1,11 @@
 import os
-import pandas as pd
-from PIL import Image
 import numpy as np
+import tifffile
+from sklearn.mixture import GaussianMixture
 import cv2
+import tkinter as tk
+from tkinter import filedialog
+
 
 class directory_manager:
     """
@@ -48,6 +51,8 @@ class directory_manager:
             for file in files:
                 all_files.append(os.path.join(root, file))
         return all_files
+    
+
     
     
 
@@ -101,4 +106,3 @@ class directory_manager:
                 compensated_images.append(compensated_image)
             return compensated_images
         
-    def generate_roi (self, compensated_images,)
