@@ -7,7 +7,7 @@ import pandas as pd
 import cv2
 
 
-class DataWrangling:
+class data_wrangling_methods:
     """
     Data Wrangling Class to manage the directories and files in the project folder.
 
