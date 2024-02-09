@@ -2,6 +2,7 @@ import os
 import numpy as np
 import tifffile
 from sklearn.mixture import GaussianMixture
+import pandas as pd
 import cv2
 
 
@@ -49,19 +50,6 @@ class directory_manager:
             for file in files:
                 all_files.append(os.path.join(root, file))
         return all_files
-    
-
-    
-    
-
-    
-
-    
-    def read_tiff(self, tiff_path): # read a multi-frame TIFF file
-        with Image.open(tiff_path) as img:
-            frames = [np.array(img.getdata(), dtype=np.float32).reshape(img.size[::-1]) for i in range(img.n_frames)] # list of frames in the multi-frame TIFF file
-        return frames
-    
     
     
     def generate_dark_image(self, tiff_path, num_frames=100):
