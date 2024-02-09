@@ -1,6 +1,7 @@
 import os
 import numpy as np
 import tifffile
+from PIL import Image
 from sklearn.mixture import GaussianMixture
 import pandas as pd
 import cv2
@@ -51,7 +52,7 @@ class directory_manager:
                 all_files.append(os.path.join(root, file))
         return all_files
     
-    
+
     def generate_dark_image(self, tiff_path, num_frames=100):
         """
         Generates a median 'dark' image from the first specified number of frames in a multi-frame TIFF file.
