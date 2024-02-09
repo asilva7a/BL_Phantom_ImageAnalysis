@@ -5,12 +5,12 @@ from sklearn.mixture import GaussianMixture
 import cv2
 
 def select_file(title="Select file"):
-    root = tk.Tk()
-    root.withdraw()  # Hide the main window
-    file_path = filedialog.askopenfilename(title=title)
-    return file_path
+    #root = tk.Tk()
+   # root.withdraw()  # Hide the main window
+    #file_path = filedialog.askopenfilename(title=title)
+    return title
 
-# Change the working directory
+#Change the working directory
 desired_path = 'path/to/your/directory'  # Replace with your desired path
 os.chdir(desired_path)
 
