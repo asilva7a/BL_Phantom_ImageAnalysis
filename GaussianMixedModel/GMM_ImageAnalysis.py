@@ -2,7 +2,6 @@ import os
 import numpy as np
 import tifffile
 from sklearn.mixture import GaussianMixture
-import opencv
 import cv2
 
 def select_file(title="Select file"):
